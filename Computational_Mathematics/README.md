@@ -1,3 +1,3 @@
 # Вычислительная математика
 
-[Условия] (Requirements.pdf)
+*   [Условия] (Requirements.pdf)

@@ -1,0 +1,36 @@
+﻿<Window x:Class="MusicApplicationWPF.gui.WindowAdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MusicApplicationWPF.gui"
+        mc:Ignorable="d"
+        Title="WindowAdd" Height="233.459" Width="391.353" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="9*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="2" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="textBoxPath" Grid.Column="0" FontSize="16" Margin ="8,15,8,8"/>
+            <Button x:Name="button" Content="+" Grid.Column="1" FontSize="18" Margin="8,15,8,8" Click="button_Click" />
+        </Grid>
+        <Label x:Name="label" Content="Singer:" FontSize="20" Grid.Row="0" Grid.Column="0" Margin="0,5,0,0"/>
+        <Label x:Name="label1" Content="Name:" FontSize="20" Grid.Row="1" Grid.Column="0" Margin="0,5,0,0"/>
+        <Label x:Name="label1_Copy" Content="Path:" FontSize="20" Grid.Row="2" Grid.Column="0" Margin="0,5,0,0"/>
+        <TextBox x:Name="textBoxSinger" Grid.Row="0" FontSize="16" Grid.Column="1" Margin ="8,14.8,8,8" />
+        <TextBox x:Name="textBoxName" Grid.Row="1"  FontSize="16" Grid.Column="1" Margin ="8,15,8,8"/>
+        <Button x:Name="button1" Content="Add" Click ="clickAdd"  Grid.Column="1" Margin="84,10,148,10" Grid.Row="3" FontSize="16"/>
+
+    </Grid>
+</Window>

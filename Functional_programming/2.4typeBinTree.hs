@@ -1,0 +1,1 @@
+data BinTree e = Empty | Node e (BinTree e) (BinTree e) deriving(Show, Eq, Ord)
